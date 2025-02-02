@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+font-family: "SF Pro Text",
+"SF Pro Icons",
+system,
+-apple-system,
+system-ui,
+BlinkMacSystemFont,
+"Segoe UI",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+"Lucida Grande",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+sans-serif;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #262524;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main-content{
+  margin-top: 19px;
+  min-height: calc(100vh - 38px);
+}
+.header,
+.chats-block,
+.chat-content-block{
+  min-height: calc(100vh - 38px);
+}
+.chat-content-block{
+  background-color: #202C33;
+}
+.chat-bg{
+min-height: calc(100vh - 174px);
+  padding-bottom: 20px;
+  height: fit-content;
+  overflow: hidden;
+  background: url("../public/img/ChatBG.png");
+
+}
+.new-chat{
+  cursor: pointer;
+  transition: .3s linear;
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+}
+.new-chat:hover{
+  border-radius: 50%;
+  background-color: #374248;
+}
